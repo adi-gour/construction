@@ -9,6 +9,7 @@
   --border:.1rem solid rgba(0,0,0,.3);
 }
 
+
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -982,7 +983,7 @@ section {
           user-select: none;
 }
 
-.footer {
+/* .footer {
   text-align: center;
 }
 
@@ -1000,7 +1001,7 @@ section {
 
 .footer .credit span {
   color: var(--yellow);
-}
+} */
 
 @media (max-width: 1200px) {
   .header {
@@ -1072,4 +1073,139 @@ section {
     font-size: 2.5rem;
   }
 }
+
+
+.wrapper{
+  background: #fff;
+  width: 100%;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 15px black;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+h2{
+  text-align: center;
+}
+hr{
+  width: 100px;
+  margin: 10px auto;
+}
+.members{
+  display: flex;
+}
+.team-mem{
+  text-align: center;
+  margin: 8px;
+  width: auto;
+}
+.wrapper img{
+  width: 20rem;
+  height: 20rem;
+  /* border-radius: 50%; */
+  margin: 10px;
+  border: 5px solid black;
+}
+.wrapper .h4,.para{
+  text-align: center;
+  font-size: 12px;
+  margin: 7px;
+}
+/* @media (max-width: 768px) {
+  .team-mem {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .team-mem img {
+    width: 80%;
+    height: auto;
+  }
+  
+  .heading {
+    font-size: 24px;
+  }
+} */
+
+@media screen and (max-width: 600px) {
+  .members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .team-mem {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
+body{
+  background: #eef8ff;
+}
+footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to right,#00093c,#2d0b00);
+  color: #fff;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.footer .row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col{
+  flex-basis: 25%;
+  padding: 10px;
+  font-size: 20px;
+}
+.col:nth-child(2),.col:nth-child(3){
+  flex-basis: 15%;
+}
+
+.logo{
+  width: 50%;
+  margin-bottom: 30px;
+}
+.col h3{
+  width:fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+.email-id{
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+ul li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+.col .fab{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
